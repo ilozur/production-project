@@ -2,5 +2,7 @@
   "Test Example": "Тестовый пример",
   "Translate": "Перевод",
   "Language": "Русский",
-  "Page not found": "Страница не найдена"
+  "Page not found": "Страница не найдена",
+  "Error!": "Ошибка!",
+  "Reload Page": "Перезагрузить страницу"
 }
