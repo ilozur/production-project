@@ -2,10 +2,17 @@
   "About Page": "About Page",
   "Error!": "Error!",
   "Language": "Language",
+  "Log In": "Log In",
+  "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
+    " Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam": {
+      "": ""
+    }
+  },
   "Main Page": "Main Page",
   "Page not Found": "Page not Found",
   "Reload Page": "Reload Page",
   "Toggle": "Toggle",
   "throw error": "throw error",
-  "toggle": "toggle"
+  "toggle": "toggle",
+  "Войти": "Войти"
 }
