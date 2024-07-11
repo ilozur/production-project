@@ -1,6 +1,8 @@
 {
   "About Page": "About Page",
+  "Decrement": "Decrement",
   "Error!": "Error!",
+  "Increment": "Increment",
   "Language": "Language",
   "Log In": "Log In",
   "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
@@ -12,6 +14,8 @@
   "Page not Found": "Page not Found",
   "Reload Page": "Reload Page",
   "Toggle": "Toggle",
+  "decrement": "decrement",
+  "increment": "increment",
   "throw error": "throw error",
   "toggle": "toggle",
   "Войти": "Войти"

@@ -1,15 +1,15 @@
 import { fireEvent, screen } from '@testing-library/react';
 import { Sidebar } from 'widgets/Sidebar/ui/Sidebar/Sidebar';
-import { componentRouter } from '../../../../shared/lib/tests/componentRouter/componentRouter';
+import { componentRender } from '../../../../shared/lib/tests/componentRender/componentRender';
 
 describe('Sidebar', () => {
     test('With only first param', () => {
-        componentRouter(<Sidebar />);
+        componentRender(<Sidebar />);
         expect(screen.getByTestId('sidebar')).toBeInTheDocument();
     });
 
     test('Test toggle', () => {
-        componentRouter(<Sidebar />);
+        componentRender(<Sidebar />);
         const toggleBtn = screen.getByTestId('sidebar-toggle');
         expect(screen.getByTestId('sidebar')).toBeInTheDocument();
         fireEvent.click(toggleBtn);
