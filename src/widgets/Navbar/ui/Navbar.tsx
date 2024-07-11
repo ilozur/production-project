@@ -21,6 +21,7 @@ export const Navbar = ({ className }: NavbarProprs) => {
             <Button theme={ButtonTheme.CLEAR_INVERTED} className={cls.links} onClick={onToggleModal}>
                 {t('Log In')}
             </Button>
+            {/* eslint-disable-next-line i18next/no-literal-string */}
             <Modal isOpen={isAuthModal} onClose={onToggleModal}>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequuntur dolorem dolorum eligendi enim ipsam quia rerum sunt totam velit.
             </Modal>
