@@ -1,10 +1,16 @@
 {
   "About Page": "About Page",
+  "Authorization Form": "Authorization Form",
   "Decrement": "Decrement",
+  "Enter password": "Enter password",
+  "Enter username": "Enter username",
   "Error!": "Error!",
   "Increment": "Increment",
+  "Invalid username or password": "Invalid username or password",
   "Language": "Language",
   "Log In": "Log In",
+  "Log Out": "Log Out",
+  "Log in": "Log in",
   "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
     " Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam": {
       "": ""

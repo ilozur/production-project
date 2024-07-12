@@ -10,5 +10,10 @@
   "Increment": "Increment",
   "Decrement": "Decrement",
   "Main Page": "Main Page",
-  "About Page": "About Page"
+  "About Page": "About Page",
+  "Enter username": "Enter username",
+  "Enter password": "Enter password",
+  "Log in": "Log in",
+  "Authorization Form": "Authorization Form",
+  "Invalid username or password": "Invalid username or password"
 }

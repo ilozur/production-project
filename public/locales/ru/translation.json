@@ -10,5 +10,10 @@
   "Increment": "Инкремент",
   "Decrement": "Декремент",
   "Main Page": "Главная страница",
-  "About Page": "О сайте"
+  "About Page": "О сайте",
+  "Enter username": "Enter username",
+  "Enter password": "Enter password",
+  "Log in": "Log in",
+  "Authorization Form": "Authorization Form",
+  "Invalid username or password": "Invalid username or password"
 }
