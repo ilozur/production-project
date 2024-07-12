@@ -3,11 +3,11 @@ import { useTranslation } from 'react-i18next';
 import { Button } from 'shared/ui/Button/Button';
 import cls from './PageError.module.scss';
 
-interface PageErrorProprs {
+interface ErrorPageProps {
     className?: string;
 }
 
-export const PageError = ({ className }: PageErrorProprs) => {
+export const PageError = ({ className }: ErrorPageProps) => {
     const { t } = useTranslation();
 
     const reloadPage = () => {
@@ -16,9 +16,11 @@ export const PageError = ({ className }: PageErrorProprs) => {
     };
 
     return (
-        <div className={classNames(cls.PageError, {}, [className])}>
-            <p>{t('Error!')}</p>
-            <Button onClick={reloadPage}>{t('Reload Page')}</Button>
+        <div className={classNames(cls.ErrorPage, {}, [className])}>
+            <p>{t('Произошла непредвиденная ошибка')}</p>
+            <Button onClick={reloadPage}>
+                {t('Обновить страницу')}
+            </Button>
         </div>
     );
 };

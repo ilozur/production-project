@@ -3,6 +3,4 @@ export interface User {
     username: string;
 }
 
-export interface UserSchema {
-    authData?: User;
-}
+export interface UserSchema { authData?: User; }

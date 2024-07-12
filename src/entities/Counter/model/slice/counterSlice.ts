@@ -10,16 +10,13 @@ export const counterSlice = createSlice({
     initialState,
     reducers: {
         increment: (state) => {
-            // eslint-disable-next-line no-param-reassign
             state.value += 1;
         },
         decrement: (state) => {
-            // eslint-disable-next-line no-param-reassign
             state.value -= 1;
         },
     },
 });
 
-// Action creators are generated for each case reducer function
 export const { actions: counterActions } = counterSlice;
 export const { reducer: counterReducer } = counterSlice;
