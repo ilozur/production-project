@@ -17,9 +17,7 @@ const ProfilePage = ({ className }: ProfilePageProps) => {
     const { t } = useTranslation();
     const dispatch = useAppDispatch();
 
-    useEffect(() => {
-        dispatch(fetchProfileData());
-    }, [dispatch]);
+    useEffect(() => { dispatch(fetchProfileData()); }, [dispatch]);
 
     return (
         <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
