@@ -1,6 +1,14 @@
 {
-  "Profile": "Profile",
-  "Edit": "Edit",
-  "Your name": "Your name",
-  "Your surname": "Your surname"
+  "Profile": "Профиль",
+  "Edit": "Редактировать",
+  "Firstname": "Имя",
+  "Lastname": "Фамилия",
+  "ERROR!": "ОШИБКА!",
+  "Try again": "Пожалуйста, попробуйте ещё раз",
+  "Cancel": "Отменить",
+  "Save": "Сохранить",
+  "Age": "Возраст",
+  "City": "Город",
+  "Username": "Имя пользователя",
+  "Avatar's link": "Ссылка на аватар"
 }

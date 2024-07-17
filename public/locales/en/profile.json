@@ -1,6 +1,14 @@
 {
   "Profile": "Profile",
   "Edit": "Edit",
-  "Your name": "Your name",
-  "Your surname": "Your surname"
+  "Firstname": "Firstname",
+  "Lastname": "Lastname",
+  "ERROR!": "ERROR!",
+  "Try again": "Try again",
+  "Cancel": "Cancel",
+  "Save": "Save",
+  "Age": "Age",
+  "City": "City",
+  "Username": "Username",
+  "Avatar's link": "Avatar's link"
 }
