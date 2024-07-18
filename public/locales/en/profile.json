@@ -10,5 +10,10 @@
   "Age": "Age",
   "City": "City",
   "Username": "Username",
-  "Avatar's link": "Avatar's link"
+  "Avatar's link": "Avatar's link",
+  "Server error": "Server error",
+  "No data": "No data",
+  "Incorrect firstname or lastname": "Incorrect firstname or lastname",
+  "Incorrect age": "Incorrect age",
+  "Incorrect country": "Incorrect country"
 }

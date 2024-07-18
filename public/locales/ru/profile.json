@@ -10,5 +10,10 @@
   "Age": "Возраст",
   "City": "Город",
   "Username": "Имя пользователя",
-  "Avatar's link": "Ссылка на аватар"
+  "Avatar's link": "Ссылка на аватар",
+  "Server error": "Server error",
+  "No data": "No data",
+  "Incorrect firstname or lastname": "Incorrect firstname or lastname",
+  "Incorrect age": "Incorrect age",
+  "Incorrect country": "Incorrect country"
 }
