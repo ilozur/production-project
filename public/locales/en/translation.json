@@ -12,14 +12,14 @@
   "О сайте": "About us",
   "Переключить": "Переключить",
   "Короткий язык": "En",
-  "Войти": "Login",
+  "Login": "Login",
   "Increment": "increment",
   "Decrement": "decrement",
   "Введите username": "Enter username",
   "Введите пароль": "Enter password",
   "Форма авторизации": "Auth form",
   "Вы ввели неверный логин или пароль": "Uncorrect username or password",
-  "Выйти": "Выйти",
+  "Logout": "Logout",
   "Country": "Country",
   "Currency": "Currency"
 }
