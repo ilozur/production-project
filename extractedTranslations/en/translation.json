@@ -3,9 +3,12 @@
   "Age": "Age",
   "Article not found": "Article not found",
   "Avatar's link": "Avatar's link",
+  "Back": "Back",
+  "Back to articles": "Back to articles",
   "Cancel": "Cancel",
   "City": "City",
   "Comments": "Comments",
+  "Continue": "Continue",
   "Country": "Country",
   "Currency": "Currency",
   "Decrement": "Decrement",
@@ -71,5 +74,12 @@
   "Укажите валюту": "Укажите валюту",
   "Укажите страну": "Укажите страну",
   "Форма авторизации": "",
+  "Читать далее": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  },
   "Язык": "Язык"
 }
