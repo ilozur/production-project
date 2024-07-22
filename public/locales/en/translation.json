@@ -21,5 +21,6 @@
   "Вы ввели неверный логин или пароль": "Uncorrect username or password",
   "Logout": "Logout",
   "Country": "Country",
-  "Currency": "Currency"
+  "Currency": "Currency",
+  "No comments": "No comments"
 }

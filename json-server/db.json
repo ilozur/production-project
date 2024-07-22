@@ -107,13 +107,15 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN"
+      "role": "ADMIN",
+      "avatar": "https://i0.wp.com/securitymadesimple.org/wp-content/uploads/2023/03/a19aa-computerhacker.png"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER"
+      "role": "USER",
+      "avatar": "https://i0.wp.com/securitymadesimple.org/wp-content/uploads/2023/03/a19aa-computerhacker.png"
     }
   ],
   "profile": {
