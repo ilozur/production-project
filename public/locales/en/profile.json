@@ -15,5 +15,6 @@
   "No data": "No data",
   "Incorrect firstname or lastname": "Incorrect firstname or lastname",
   "Incorrect age": "Incorrect age",
-  "Incorrect country": "Incorrect country"
+  "Incorrect country": "Incorrect country",
+  "Server Error": "Server Error"
 }
