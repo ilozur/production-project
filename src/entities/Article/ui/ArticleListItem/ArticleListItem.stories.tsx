@@ -7,7 +7,9 @@ import { Article, ArticleView } from '../../model/types/article';
 export default {
     title: 'entities/Article/ArticleListItem',
     component: ArticleListItem,
-    argTypes: { backgroundColor: { control: 'color' } },
+    argTypes: {
+        backgroundColor: { control: 'color' },
+    },
 } as ComponentMeta<typeof ArticleListItem>;
 
 const Template: ComponentStory<typeof ArticleListItem> = (args) => <ArticleListItem {...args} />;
@@ -15,13 +17,13 @@ const Template: ComponentStory<typeof ArticleListItem> = (args) => <ArticleListI
 const article = {
     id: '1',
     title: 'Javascript news asfasjf asfjkask f',
-    subtitle: 'Что нового в JS за 2024 год?',
+    subtitle: 'Что нового в JS за 2022 год?',
     img: 'https://teknotower.com/wp-content/uploads/2020/11/js.png',
     views: 1022,
-    createdAt: '26.02.2024',
+    createdAt: '26.02.2022',
     user: {
         id: '1',
-        username: 'ilozur',
+        username: 'Ulbi tv',
         avatar: 'https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg',
     },
     type: [
@@ -44,7 +46,7 @@ const article = {
         {
             id: '4',
             type: 'CODE',
-            code: '<!DOCTYPE html>\n<html>\n  <body>\n    <p id="hello"></p>\n\n    <script>\n      document.getElementById("hello").innerHTML = "Hello, world!";\n    </script>\n  </body>\n</html>',
+            code: '<!DOCTYPE html>\n<html>\n  <body>\n    <p id="hello"></p>\n\n    <script>\n      document.getElementById("hello").innerHTML = "Hello, world!";\n    </script>\n  </body>\n</html>;',
         },
         {
             id: '5',

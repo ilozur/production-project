@@ -34,7 +34,7 @@ const reducers: ReducersList = {
 
 export const ArticleDetails = memo((props: ArticleDetailsProps) => {
     const { className, id } = props;
-    const { t } = useTranslation('article-details');
+    const { t } = useTranslation();
     const dispatch = useAppDispatch();
     const isLoading = useSelector(getArticleDetailsIsLoading);
     const article = useSelector(getArticleDetailsData);
@@ -93,7 +93,7 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
         content = (
             <Text
                 align={TextAlign.CENTER}
-                title={t('ERROR!')}
+                title={t('Произошла ошибка при загрузке статьи.')}
             />
         );
     } else {
