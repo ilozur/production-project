@@ -8,7 +8,7 @@
     "start:dev:server": "node ./json-server/index.js",
     "build:dev": "sudo webpack  --env mode=development",
     "build:prod": "sudo webpack  --env mode=production",
-    "build:prod:netlify": "webpack  --env mode=production apiUrl=https://production-project-server-m1s49gb4c-edmonds-projects-757a90a6.vercel.app/",
+    "build:prod:netlify": "webpack  --env mode=production apiUrl=https://production-project-server-lac-pi.vercel.app/",
     "build:prod:ci": "webpack  --env mode=production",
     "lint:ts": "eslint \"**/*.{ts,tsx}\"",
     "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix",
