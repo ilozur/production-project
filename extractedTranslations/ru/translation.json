@@ -1,5 +1,7 @@
 {
   "": "",
+  " ilozur__habr": " ilozur__habr",
+  "1l0zur app": "1l0zur app",
   "Age": "Age",
   "Article not found": "Article not found",
   "Avatar's link": "Avatar's link",
@@ -41,6 +43,7 @@
   "Your surname": "Your surname",
   "Your username": "Your username",
   "decrement": "decrement",
+  "ilozur app": "ilozur app",
   "increment": "increment",
   "throw error": "throw error",
   "Айти": "Айти",
@@ -74,8 +77,11 @@
     "": ""
   },
   "Профиль": "Профиль",
+  "Редактирование статьи с ID = ": "Редактирование статьи с ID = ",
   "Редактировать": "Редактировать",
   "Рекомендуем": "Рекомендуем",
+  "Создание новой статьи": "Создание новой статьи",
+  "Создать статью": "Создать статью",
   "Сортировать ПО": "Сортировать ПО",
   "Сортировать по ": "Сортировать по ",
   "Сохранить": "Сохранить",
