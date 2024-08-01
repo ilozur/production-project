@@ -10,7 +10,9 @@ import ProfilePage from './ProfilePage';
 export default {
     title: 'pages/ProfilePage',
     component: ProfilePage,
-    argTypes: { backgroundColor: { control: 'color' } },
+    argTypes: {
+        backgroundColor: { control: 'color' },
+    },
 } as ComponentMeta<typeof ProfilePage>;
 
 const Template: ComponentStory<typeof ProfilePage> = (args) => <ProfilePage {...args} />;
@@ -20,12 +22,12 @@ Normal.args = {};
 Normal.decorators = [StoreDecorator({
     profile: {
         form: {
-            username: 'ilozur',
-            age: 23,
-            country: Country.Armenia,
-            first: 'Edmond',
-            lastname: 'Podlegaev',
-            city: 'Yerevan',
+            username: 'admin',
+            age: 22,
+            country: Country.Ukraine,
+            lastname: 'ulbi tv',
+            first: 'asd',
+            city: 'asf',
             currency: Currency.USD,
         },
     },
@@ -36,12 +38,12 @@ Dark.args = {};
 Dark.decorators = [ThemeDecorator(Theme.DARK), StoreDecorator({
     profile: {
         form: {
-            username: 'ilozur',
-            age: 23,
-            country: Country.Armenia,
-            first: 'Edmond',
-            lastname: 'Podlegaev',
-            city: 'Yerevan',
+            username: 'admin',
+            age: 22,
+            country: Country.Ukraine,
+            lastname: 'ulbi tv',
+            first: 'asd',
+            city: 'asf',
             currency: Currency.USD,
         },
     },

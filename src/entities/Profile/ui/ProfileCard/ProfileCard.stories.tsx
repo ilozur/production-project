@@ -8,7 +8,9 @@ import { ProfileCard } from './ProfileCard';
 export default {
     title: 'entities/ProfileCard',
     component: ProfileCard,
-    argTypes: { backgroundColor: { control: 'color' } },
+    argTypes: {
+        backgroundColor: { control: 'color' },
+    },
 } as ComponentMeta<typeof ProfileCard>;
 
 const Template: ComponentStory<typeof ProfileCard> = (args) => <ProfileCard {...args} />;
@@ -16,19 +18,19 @@ const Template: ComponentStory<typeof ProfileCard> = (args) => <ProfileCard {...
 export const Primary = Template.bind({});
 Primary.args = {
     data: {
-        username: 'ilozur',
-        age: 23,
-        country: Country.Armenia,
-        first: 'Edmond',
-        lastname: 'Podlegaev',
-        city: 'Yerevan',
+        username: 'admin',
+        age: 22,
+        country: Country.Ukraine,
+        lastname: 'ulbi tv',
+        first: 'asd',
+        city: 'asf',
         currency: Currency.USD,
         avatar,
     },
 };
 
-export const WithError = Template.bind({});
-WithError.args = {
+export const withError = Template.bind({});
+withError.args = {
     error: 'true',
 };
 

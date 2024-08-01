@@ -19,14 +19,14 @@ const Template: ComponentStory<typeof ArticleDetailsPage> = (args) => <ArticleDe
 const article: Article = {
     id: '1',
     title: 'Javascript news',
-    subtitle: 'Что нового в JS за 2024 год?',
+    subtitle: 'Что нового в JS за 2022 год?',
     img: 'https://teknotower.com/wp-content/uploads/2020/11/js.png',
     views: 1022,
-    createdAt: '26.02.2024',
+    createdAt: '26.02.2022',
     type: [ArticleType.IT],
     user: {
         id: '1',
-        username: 'ilozur',
+        username: 'Ulbi tv',
     },
     blocks: [
         {
@@ -42,7 +42,7 @@ const article: Article = {
         {
             id: '4',
             type: ArticleBlockType.CODE,
-            code: '<!DOCTYPE html>\n<html>\n  <body>\n    <p id="hello"></p>\n\n    <script>\n      document.getElementById("hello").innerHTML = "Hello, world!";\n    </script>\n  </body>\n</html>',
+            code: '<!DOCTYPE html>\n<html>\n  <body>\n    <p id="hello"></p>\n\n    <script>\n      document.getElementById("hello").innerHTML = "Hello, world!";\n    </script>\n  </body>\n</html>;',
         },
         {
             id: '5',
