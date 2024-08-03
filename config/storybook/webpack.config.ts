@@ -9,15 +9,17 @@ export default ({ config }: {config: webpack.Configuration}) => {
         html: '',
         entry: '',
         src: path.resolve(__dirname, '..', '..', 'src'),
-        locales: path.resolve(__dirname, 'public', 'locales'),
-        buildLocales: path.resolve(__dirname, 'build', 'locales'),
+        locales: '',
+        buildLocales: '',
     };
     config!.resolve!.modules!.push(paths.src);
     config!.resolve!.extensions!.push('.ts', '.tsx');
 
     // @ts-ignore
-    config!.module!.rules = config!.module!.rules!.map((rule: RuleSetRule) => {
-        if (/svg/.test(rule.test as string)) { return { ...rule, exclude: /\.svg$/i }; }
+    config!.module!.rules = config.module!.rules!.map((rule: RuleSetRule) => {
+        if (/svg/.test(rule.test as string)) {
+            return { ...rule, exclude: /\.svg$/i };
+        }
 
         return rule;
     });
@@ -30,7 +32,7 @@ export default ({ config }: {config: webpack.Configuration}) => {
 
     config!.plugins!.push(new DefinePlugin({
         __IS_DEV__: JSON.stringify(true),
-        __API__: JSON.stringify('apiUrl'),
+        __API__: JSON.stringify('https://testapi.ru'),
         __PROJECT__: JSON.stringify('storybook'),
     }));
 
