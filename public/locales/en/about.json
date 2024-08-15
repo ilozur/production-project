@@ -1,5 +1,8 @@
 {
     "О сайте": "About us",
     "Админ панель": "Admin Panel",
-    "У вас нет доступа к этой странице": "You don't have permission for this page"
+    "У вас нет доступа к этой странице": "You don't have permission for this page",
+  "Этот сайт является частью моего резюме и служит для того, чтобы показать, на что я способен как профессионал": {
+    " Моя цель — продемонстрировать не только свои технические навыки, но и навыки промышленного программирования и умение работать с современными frontend-технологиями": "This site is part of my resume and serves to demonstrate what I can offer as a professional. My goal is to showcase not only my technical skills but also my 'enterprise programming'-flow and 'modern frontend'-skills"
+  }
 }
