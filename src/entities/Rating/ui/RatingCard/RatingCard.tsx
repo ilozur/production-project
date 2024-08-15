@@ -69,7 +69,7 @@ export const RatingCard = memo((props: RatingCardProps) => {
     const modalContent = (
         <ToggleFeatures
             feature="isAppRedesigned"
-            on={
+            on={(
                 <>
                     <Text title={feedbackTitle} />
                     <Input
@@ -79,8 +79,8 @@ export const RatingCard = memo((props: RatingCardProps) => {
                         placeholder={t('Ваш отзыв')}
                     />
                 </>
-            }
-            off={
+            )}
+            off={(
                 <>
                     <TextDepreacetd title={feedbackTitle} />
                     <InputDeprecated
@@ -90,7 +90,7 @@ export const RatingCard = memo((props: RatingCardProps) => {
                         placeholder={t('Ваш отзыв')}
                     />
                 </>
-            }
+            )}
         />
     );
 
@@ -99,16 +99,16 @@ export const RatingCard = memo((props: RatingCardProps) => {
             <VStack align="center" gap="8" max>
                 <ToggleFeatures
                     feature="isAppRedesigned"
-                    on={
+                    on={(
                         <Text
                             title={starsCount ? t('Спасибо за оценку!') : title}
                         />
-                    }
-                    off={
+                    )}
+                    off={(
                         <TextDepreacetd
                             title={starsCount ? t('Спасибо за оценку!') : title}
                         />
-                    }
+                    )}
                 />
                 <StarRating
                     selectedStars={starsCount}
@@ -122,7 +122,7 @@ export const RatingCard = memo((props: RatingCardProps) => {
                         {modalContent}
                         <ToggleFeatures
                             feature="isAppRedesigned"
-                            on={
+                            on={(
                                 <HStack max gap="16" justify="end">
                                     <Button
                                         data-testid="RatingCard.Close"
@@ -137,8 +137,8 @@ export const RatingCard = memo((props: RatingCardProps) => {
                                         {t('Отправить')}
                                     </Button>
                                 </HStack>
-                            }
-                            off={
+                            )}
+                            off={(
                                 <HStack max gap="16" justify="end">
                                     <ButtonDeprecated
                                         data-testid="RatingCard.Close"
@@ -154,7 +154,7 @@ export const RatingCard = memo((props: RatingCardProps) => {
                                         {t('Отправить')}
                                     </ButtonDeprecated>
                                 </HStack>
-                            }
+                            )}
                         />
                     </VStack>
                 </Modal>
@@ -165,7 +165,7 @@ export const RatingCard = memo((props: RatingCardProps) => {
                         {modalContent}
                         <ToggleFeatures
                             feature="isAppRedesigned"
-                            on={
+                            on={(
                                 <Button
                                     fullWidth
                                     onClick={acceptHandle}
@@ -173,8 +173,8 @@ export const RatingCard = memo((props: RatingCardProps) => {
                                 >
                                     {t('Отправить')}
                                 </Button>
-                            }
-                            off={
+                            )}
+                            off={(
                                 <ButtonDeprecated
                                     fullWidth
                                     onClick={acceptHandle}
@@ -182,7 +182,7 @@ export const RatingCard = memo((props: RatingCardProps) => {
                                 >
                                     {t('Отправить')}
                                 </ButtonDeprecated>
-                            }
+                            )}
                         />
                     </VStack>
                 </Drawer>
@@ -193,12 +193,12 @@ export const RatingCard = memo((props: RatingCardProps) => {
     return (
         <ToggleFeatures
             feature="isAppRedesigned"
-            on={
+            on={(
                 <Card fullWidth border="partial" padding="24">
                     {content}
                 </Card>
-            }
-            off={
+            )}
+            off={(
                 <CardDeprecated
                     className={className}
                     max
@@ -206,7 +206,7 @@ export const RatingCard = memo((props: RatingCardProps) => {
                 >
                     {content}
                 </CardDeprecated>
-            }
+            )}
         />
     );
 });

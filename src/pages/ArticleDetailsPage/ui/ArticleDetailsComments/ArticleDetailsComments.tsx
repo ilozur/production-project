@@ -45,12 +45,12 @@ export const ArticleDetailsComments = memo(
                 <ToggleFeatures
                     feature="isAppRedesigned"
                     on={<Text size="l" title={t('Комментарии')} />}
-                    off={
+                    off={(
                         <TextDeprecated
                             size={TextSize.L}
                             title={t('Комментарии')}
                         />
-                    }
+                    )}
                 />
                 <Suspense fallback={<Loader />}>
                     <AddCommentForm onSendComment={onSendComment} />

@@ -21,7 +21,9 @@ import {
 } from '../../../model/consts/articleConsts';
 
 export const ArticleListItemRedesigned = memo((props: ArticleListItemProps) => {
-    const { className, article, view, target } = props;
+    const {
+        className, article, view, target,
+    } = props;
     const { t } = useTranslation();
 
     const userInfo = (

@@ -28,12 +28,12 @@ export const ArticleImageBlockComponent = memo(
                     <ToggleFeatures
                         feature="isAppRedesigned"
                         on={<Text text={block.title} align="center" />}
-                        off={
+                        off={(
                             <TextDeprecated
                                 text={block.title}
                                 align={TextAlign.CENTER}
                             />
-                        }
+                        )}
                     />
                 )}
             </div>

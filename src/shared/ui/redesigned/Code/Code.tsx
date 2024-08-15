@@ -2,7 +2,7 @@ import { memo, useCallback } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import CopyIcon from '@/shared/assets/icons/copy-20-20.svg';
 import CopyIconNew from '@/shared/assets/icons/copy.svg';
-import { Button, ButtonTheme } from '../../deprecated/Button/Button';
+import { Button, ButtonTheme } from '../../deprecated/Button';
 import cls from './Code.module.scss';
 import { ToggleFeatures } from '@/shared/lib/features';
 import { Icon } from '../Icon';
@@ -22,7 +22,7 @@ export const Code = memo((props: CodeProps) => {
     return (
         <ToggleFeatures
             feature="isAppRedesigned"
-            on={
+            on={(
                 <pre
                     className={classNames(cls.CodeRedesigned, {}, [className])}
                 >
@@ -34,8 +34,8 @@ export const Code = memo((props: CodeProps) => {
                     />
                     <code>{text}</code>
                 </pre>
-            }
-            off={
+            )}
+            off={(
                 <pre className={classNames(cls.Code, {}, [className])}>
                     <Button
                         onClick={onCopy}
@@ -46,7 +46,7 @@ export const Code = memo((props: CodeProps) => {
                     </Button>
                     <code>{text}</code>
                 </pre>
-            }
+            )}
         />
     );
 });

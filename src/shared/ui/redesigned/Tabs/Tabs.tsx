@@ -1,6 +1,6 @@
 import { memo, ReactNode, useCallback } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { Card } from '../Card/Card';
+import { Card } from '../Card';
 import cls from './Tabs.module.scss';
 import { Flex, FlexDirection } from '../Stack/Flex/Flex';
 
@@ -18,7 +18,9 @@ interface TabsProps {
 }
 
 export const Tabs = memo((props: TabsProps) => {
-    const { className, tabs, onTabClick, value, direction = 'row' } = props;
+    const {
+        className, tabs, onTabClick, value, direction = 'row',
+    } = props;
 
     const clickHandle = useCallback(
         (tab: TabItem) => () => {

@@ -27,31 +27,31 @@ export const ArticleTextBlockComponent = memo(
                     <ToggleFeatures
                         feature="isAppRedesigned"
                         on={<Text title={block.title} className={cls.title} />}
-                        off={
+                        off={(
                             <TextDeprecated
                                 title={block.title}
                                 className={cls.title}
                             />
-                        }
+                        )}
                     />
                 )}
                 {block.paragraphs.map((paragraph, index) => (
                     <ToggleFeatures
                         feature="isAppRedesigned"
-                        on={
+                        on={(
                             <Text
                                 key={paragraph}
                                 text={paragraph}
                                 className={cls.paragraph}
                             />
-                        }
-                        off={
+                        )}
+                        off={(
                             <TextDeprecated
                                 key={paragraph}
                                 text={paragraph}
                                 className={cls.paragraph}
                             />
-                        }
+                        )}
                     />
                 ))}
             </div>

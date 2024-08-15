@@ -38,14 +38,14 @@ export const NotificationButton = memo((props: NotificationButtonProps) => {
             on={
                 <Icon Svg={NotificationIcon} clickable onClick={onOpenDrawer} />
             }
-            off={
+            off={(
                 <ButtonDeprecated
                     onClick={onOpenDrawer}
                     theme={ButtonTheme.CLEAR}
                 >
                     <IconDeprecated Svg={NotificationIconDeprecated} inverted />
                 </ButtonDeprecated>
-            }
+            )}
         />
     );
 
@@ -54,7 +54,7 @@ export const NotificationButton = memo((props: NotificationButtonProps) => {
             <BrowserView>
                 <ToggleFeatures
                     feature="isAppRedesigned"
-                    on={
+                    on={(
                         <Popover
                             className={classNames(cls.NotificationButton, {}, [
                                 className,
@@ -64,8 +64,8 @@ export const NotificationButton = memo((props: NotificationButtonProps) => {
                         >
                             <NotificationList className={cls.notifications} />
                         </Popover>
-                    }
-                    off={
+                    )}
+                    off={(
                         <PopoverDeprecated
                             className={classNames(cls.NotificationButton, {}, [
                                 className,
@@ -75,7 +75,7 @@ export const NotificationButton = memo((props: NotificationButtonProps) => {
                         >
                             <NotificationList className={cls.notifications} />
                         </PopoverDeprecated>
-                    }
+                    )}
                 />
             </BrowserView>
             <MobileView>

@@ -59,7 +59,7 @@ const AddCommentForm = memo((props: AddCommentFormProps) => {
         <DynamicModuleLoader reducers={reducers}>
             <ToggleFeatures
                 feature="isAppRedesigned"
-                on={
+                on={(
                     <Card padding="24" border="partial" fullWidth>
                         <HStack
                             data-testid="AddCommentForm"
@@ -87,8 +87,8 @@ const AddCommentForm = memo((props: AddCommentFormProps) => {
                             </Button>
                         </HStack>
                     </Card>
-                }
-                off={
+                )}
+                off={(
                     <HStack
                         data-testid="AddCommentForm"
                         justify="between"
@@ -112,7 +112,7 @@ const AddCommentForm = memo((props: AddCommentFormProps) => {
                             {t('Отправить')}
                         </ButtonDeprecated>
                     </HStack>
-                }
+                )}
             />
         </DynamicModuleLoader>
     );

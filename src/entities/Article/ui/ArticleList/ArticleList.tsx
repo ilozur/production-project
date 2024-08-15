@@ -18,16 +18,15 @@ interface ArticleListProps {
     view?: ArticleView;
 }
 
-const getSkeletons = (view: ArticleView) =>
-    new Array(view === ArticleView.SMALL ? 9 : 3)
-        .fill(0)
-        .map((item, index) => (
-            <ArticleListItemSkeleton
-                className={cls.card}
-                key={index}
-                view={view}
-            />
-        ));
+const getSkeletons = (view: ArticleView) => new Array(view === ArticleView.SMALL ? 9 : 3)
+    .fill(0)
+    .map((item, index) => (
+        <ArticleListItemSkeleton
+            className={cls.card}
+            key={index}
+            view={view}
+        />
+    ));
 
 export const ArticleList = memo((props: ArticleListProps) => {
     const {
@@ -55,7 +54,7 @@ export const ArticleList = memo((props: ArticleListProps) => {
     return (
         <ToggleFeatures
             feature="isAppRedesigned"
-            on={
+            on={(
                 <HStack
                     wrap="wrap"
                     gap="16"
@@ -73,8 +72,8 @@ export const ArticleList = memo((props: ArticleListProps) => {
                     ))}
                     {isLoading && getSkeletons(view)}
                 </HStack>
-            }
-            off={
+            )}
+            off={(
                 <div
                     className={classNames(cls.ArticleList, {}, [
                         className,
@@ -93,7 +92,7 @@ export const ArticleList = memo((props: ArticleListProps) => {
                     ))}
                     {isLoading && getSkeletons(view)}
                 </div>
-            }
+            )}
         />
     );
 });

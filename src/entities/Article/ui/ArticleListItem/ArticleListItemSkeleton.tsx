@@ -61,16 +61,16 @@ export const ArticleListItemSkeleton = memo(
                 >
                     <ToggleFeatures
                         feature="isAppRedesigned"
-                        on={
+                        on={(
                             <CardRedesigned border="round" className={cls.card}>
                                 {cardContent}
                             </CardRedesigned>
-                        }
-                        off={
+                        )}
+                        off={(
                             <CardDeprecated className={cls.card}>
                                 {cardContent}
                             </CardDeprecated>
-                        }
+                        )}
                     />
                 </div>
             );
@@ -80,15 +80,15 @@ export const ArticleListItemSkeleton = memo(
             <>
                 <ToggleFeatures
                     feature="isAppRedesigned"
-                    on={
+                    on={(
                         <Skeleton
                             width="100%"
                             height={150}
                             border="32px"
                             className={cls.img}
                         />
-                    }
-                    off={
+                    )}
+                    off={(
                         <div className={cls.imageWrapper}>
                             <Skeleton
                                 width={200}
@@ -96,7 +96,7 @@ export const ArticleListItemSkeleton = memo(
                                 className={cls.img}
                             />
                         </div>
-                    }
+                    )}
                 />
                 <div className={cls.infoWrapper}>
                     <Skeleton width={130} height={16} />
@@ -109,16 +109,16 @@ export const ArticleListItemSkeleton = memo(
             <div className={classNames(mainClass, {}, [className, cls[view]])}>
                 <ToggleFeatures
                     feature="isAppRedesigned"
-                    on={
+                    on={(
                         <CardRedesigned border="round" className={cls.card}>
                             {cardContent}
                         </CardRedesigned>
-                    }
-                    off={
+                    )}
+                    off={(
                         <CardDeprecated className={cls.card}>
                             {cardContent}
                         </CardDeprecated>
-                    }
+                    )}
                 />
             </div>
         );

@@ -77,13 +77,13 @@ const Redesigned = () => {
             <Text title={article?.title} size="l" bold />
             <Text title={article?.subtitle} />
             <AppImage
-                fallback={
+                fallback={(
                     <SkeletonRedesigned
                         width="100%"
                         height={420}
                         border="16px"
                     />
-                }
+                )}
                 src={article?.img}
                 className={cls.img}
             />

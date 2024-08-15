@@ -19,7 +19,7 @@ export const NotificationItem = memo((props: NotificationItemProps) => {
     const content = (
         <ToggleFeatures
             feature="isAppRedesigned"
-            on={
+            on={(
                 <Card
                     className={classNames(cls.NotificationItem, {}, [
                         className,
@@ -27,8 +27,8 @@ export const NotificationItem = memo((props: NotificationItemProps) => {
                 >
                     <Text title={item.title} text={item.description} />
                 </Card>
-            }
-            off={
+            )}
+            off={(
                 <CardDeprecated
                     theme={CardTheme.OUTLINED}
                     className={classNames(cls.NotificationItem, {}, [
@@ -40,7 +40,7 @@ export const NotificationItem = memo((props: NotificationItemProps) => {
                         text={item.description}
                     />
                 </CardDeprecated>
-            }
+            )}
         />
     );
 

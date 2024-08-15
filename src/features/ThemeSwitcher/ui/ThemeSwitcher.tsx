@@ -28,7 +28,7 @@ export const ThemeSwitcher = memo(({ className }: ThemeSwitcherProps) => {
         <ToggleFeatures
             feature="isAppRedesigned"
             on={<Icon Svg={ThemeIcon} clickable onClick={onToggleHandler} />}
-            off={
+            off={(
                 <Button
                     theme={ButtonTheme.CLEAR}
                     className={classNames('', {}, [className])}
@@ -41,7 +41,7 @@ export const ThemeSwitcher = memo(({ className }: ThemeSwitcherProps) => {
                         inverted
                     />
                 </Button>
-            }
+            )}
         />
     );
 });

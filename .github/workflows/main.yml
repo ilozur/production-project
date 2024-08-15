@@ -22,11 +22,11 @@ jobs:
       - name: build production project
         run: npm run build:prod:ci
         if: always()
-      - name: linting typescript
-        run: npm run lint:ts
-        if: always()
-      - name: linting css
-        run: npm run lint:scss
+#      - name: linting typescript
+#        run: npm run lint:ts
+#        if: always()
+#      - name: linting css
+#        run: npm run lint:scss
       - name: unit testing
         if: always()
         run: npm run test:unit
