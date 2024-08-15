@@ -1,4 +1,3 @@
-import { userActions } from '@/entities/User';
 import { TestAsyncThunk } from '@/shared/lib/tests/TestAsyncThunk/TestAsyncThunk';
 import { Country } from '@/entities/Country';
 import { Currency } from '@/entities/Currency';
@@ -8,7 +7,7 @@ const data = {
     username: 'admin',
     age: 22,
     country: Country.Ukraine,
-    lastname: 'ulbi tv',
+    lastname: 'ilozur',
     first: 'asd',
     city: 'asf',
     currency: Currency.USD,

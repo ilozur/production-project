@@ -1,4 +1,4 @@
 // Форма создания статьи
-export interface ArticleEditFormSchemas {
+export interface ArticleEditFormSchema {
     id: string;
 }
